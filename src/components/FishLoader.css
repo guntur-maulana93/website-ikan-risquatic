@@ -1,0 +1,306 @@
+.fish-loader-wrapper{
+  width:100%;
+  height:100vh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  overflow:hidden;
+  position:relative;
+
+  background:
+    radial-gradient(circle at top,
+    #123d6b 0%,
+    #081120 70%);
+}
+
+/* TRACK */
+.fish-track{
+  position:relative;
+
+  width:700px;
+  max-width:90%;
+
+  height:140px;
+
+  display:flex;
+  align-items:center;
+
+  overflow:visible;
+
+  margin-bottom:30px;
+}
+
+/* ================= IKAN ================= */
+.fish{
+  position:absolute;
+
+  width:120px;
+  height:70px;
+
+  background:linear-gradient(
+    135deg,
+    #29bfff,
+    #44d2ff
+  );
+
+  border-radius:55% 45% 50% 50%;
+
+  top:50%;
+
+  /* MULAI DARI DALAM AREA */
+  left:0;
+
+  transform:translateY(-50%);
+
+  animation:fishSwim 4s linear infinite;
+
+  box-shadow:0 0 25px rgba(41,191,255,0.6);
+}
+
+/* ================= GERAK IKAN ================= */
+
+@keyframes fishSwim{
+  0%{
+    left:0%;
+    transform:translateY(-50%);
+  }
+
+  100%{
+    left:calc(100% - 120px);
+    transform:translateY(-50%);
+  }
+}
+
+/* ================= MATA ================= */
+
+.fish-eye{
+  position:absolute;
+
+  width:10px;
+  height:10px;
+
+  border-radius:50%;
+
+  background:#021421;
+
+  right:22px;
+  top:24px;
+}
+
+/* ================= MULUT ================= */
+
+.fish-mouth{
+  position:absolute;
+
+  width:12px;
+  height:6px;
+
+  right:-4px;
+  top:32px;
+
+  background:white;
+
+  border-radius:0 10px 10px 0;
+}
+
+/* ================= EKOR ================= */
+
+.fish-tail{
+  position:absolute;
+
+  width:34px;
+  height:42px;
+
+  left:-24px;
+  top:14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1da8ee,
+      #148ad0
+    );
+
+  border-radius:70% 0 0 70%;
+
+  clip-path:ellipse(70% 50% at 70% 50%);
+
+  transform-origin:right center;
+
+  animation:tailMove .35s ease-in-out infinite alternate;
+}
+
+@keyframes tailMove{
+
+  0%{
+    transform:rotate(16deg);
+  }
+
+  100%{
+    transform:rotate(-16deg);
+  }
+}
+
+/* ================= SIRIP ATAS ================= */
+
+.fish-fin-top{
+  position:absolute;
+
+  width:22px;
+  height:18px;
+
+  top:-9px;
+  left:52px;
+
+  background:#37c8ff;
+
+  border-radius:50% 50% 0 0;
+
+  animation:finTop .8s ease-in-out infinite alternate;
+}
+
+@keyframes finTop{
+
+  0%{
+    transform:rotate(-10deg);
+  }
+
+  100%{
+    transform:rotate(10deg);
+  }
+}
+
+/* ================= SIRIP BAWAH ================= */
+
+.fish-fin-bottom{
+  position:absolute;
+
+  width:20px;
+  height:16px;
+
+  bottom:-8px;
+  left:50px;
+
+  background:#37c8ff;
+
+  border-radius:0 0 50% 50%;
+
+  animation:finBottom .8s ease-in-out infinite alternate;
+}
+
+@keyframes finBottom{
+
+  0%{
+    transform:rotate(10deg);
+  }
+
+  100%{
+    transform:rotate(-10deg);
+  }
+}
+
+/* ================= SIRIP SAMPING ================= */
+
+.fish-fin-side{
+  position:absolute;
+
+  width:24px;
+  height:16px;
+
+  left:45px;
+  top:28px;
+
+  border-radius:50%;
+
+  background:rgba(255,255,255,.18);
+
+  animation:finSide .6s ease-in-out infinite alternate;
+}
+
+@keyframes finSide{
+
+  0%{
+    transform:rotate(28deg);
+  }
+
+  100%{
+    transform:rotate(48deg);
+  }
+}
+
+/* ================= LOADING BAR ================= */
+
+.loading-bar{
+  width:320px;
+  max-width:80%;
+
+  height:10px;
+
+  background:rgba(255,255,255,0.12);
+
+  border-radius:999px;
+
+  overflow:hidden;
+
+  margin-top:10px;
+}
+
+.loading-fill{
+  height:100%;
+  width:0%;
+
+  border-radius:999px;
+
+  background:linear-gradient(
+    90deg,
+    #29bfff,
+    #7be7ff
+  );
+
+  animation:loadingFill 4s linear infinite;
+}
+
+@keyframes loadingFill{
+  0%{
+    width:0%;
+  }
+
+  100%{
+    width:100%;
+  }
+}
+
+/* ================= TEXT ================= */
+
+.loading-text{
+  margin-top:22px;
+
+  color:#8fdcff;
+
+  font-size:22px;
+  font-weight:700;
+
+  letter-spacing:2px;
+
+  font-family:'Montserrat', sans-serif;
+
+  animation:pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse{
+
+  0%{
+    opacity:.5;
+  }
+
+  50%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:.5;
+  }
+}
