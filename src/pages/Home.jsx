@@ -19,6 +19,7 @@ import arwana2Img from "../assets/img/products/arwana2.jpg";
 import blackghostImg from "../assets/img/products/blackghost.jpg";
 import prtdeImg from "../assets/img/products/prtde.jpg";
 import pakanImg from "../assets/img/products/pakan.jpg";
+import aquarium from "../assets/img/products/aquarium.jpg";
 import candilaImg from "../assets/img/products/candila.jpg";
 import filterImg from "../assets/img/products/filter.jpg";
 import batu_apungImg from "../assets/img/products/batu_apung.jpg";
@@ -56,7 +57,7 @@ export default function Home() {
     {
       image: banner1,
       title: "Selamat Datang di RISQUATIC",
-      desc: "Temukan keindahan biota air dan peralatan lengkap untuk hobi Anda.",
+      desc: "Temukan keindahan biota air dan peralatan lengkap untuk mendukung hobi Anda.",
     },
 
     {
@@ -68,7 +69,7 @@ export default function Home() {
     {
       image: banner3,
       title: "Peralatan Aquarium Terbaik",
-      desc: "Filter, lampu LED, aquarium, dan aksesoris lengkap.",
+      desc: "Filter, Lampu LED, Aquarium, dan kebutuhan anda lainnya.",
     },
   ];
 
@@ -130,7 +131,7 @@ export default function Home() {
 
     {
       id: 7,
-      name: "Arowana Silver",
+      name: "Arwana Silver",
       price: "Rp 150.000",
       image: arwana2Img,
       category: "Ikan",
@@ -166,6 +167,15 @@ export default function Home() {
 
     {
       id: 11,
+      name: "Aquarium",
+      price: "Rp 75.000",
+      image: aquariumImg,
+      category: "Alat",
+      desc: "Aquarium dengan ukuran panjang 30cm, lebar dan tinggi 20cm.",
+    },
+
+    {
+      id: 12,
       name: "Lampu Candila",
       price: "Rp 70.000-100.000",
       image: candilaImg,
@@ -174,7 +184,7 @@ export default function Home() {
     },
 
     {
-      id: 12,
+      id: 13,
       name: "Filter Aquarium",
       price: "Rp 80.000",
       image: filterImg,
@@ -183,7 +193,7 @@ export default function Home() {
     },
 
     {
-      id: 13,
+      id: 14,
       name: "Batu Apung",
       price: "Rp 10.000",
       image: batu_apungImg,
@@ -192,7 +202,7 @@ export default function Home() {
     },
 
     {
-      id: 14,
+      id: 15,
       name: "Karang Jahe",
       price: "Rp 10.000",
       image: karang_jaheImg,
@@ -201,7 +211,7 @@ export default function Home() {
     },
 
     {
-      id: 15,
+      id: 16,
       name: "Bioring",
       price: "Rp 15.000",
       image: bioringImg,
@@ -210,7 +220,7 @@ export default function Home() {
     },
 
     {
-      id: 16,
+      id: 17,
       name: "Kapas Filter",
       price: "Rp 10.000",
       image: kapasImg,
@@ -682,7 +692,7 @@ img{
                   position: "absolute",
                   inset: 0,
                   background:
-                    "linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(8,17,32,0.90))",
+                    "linear-gradient(to bottom, rgba(0,0,0,0.10), rgba(8,17,32,0.35))",
                 }}
               />
 
