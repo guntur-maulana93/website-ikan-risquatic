@@ -19,7 +19,7 @@ import arwana2Img from "../assets/img/products/arwana2.jpg";
 import blackghostImg from "../assets/img/products/blackghost.jpg";
 import prtdeImg from "../assets/img/products/prtde.jpg";
 import pakanImg from "../assets/img/products/pakan.jpg";
-import aquarium from "../assets/img/products/aquarium.jpg";
+import aquariumImg from "../assets/img/products/aquarium.jpg";
 import candilaImg from "../assets/img/products/candila.jpg";
 import filterImg from "../assets/img/products/filter.jpg";
 import batu_apungImg from "../assets/img/products/batu_apung.jpg";
