@@ -750,10 +750,8 @@ img{
         {/* ================= PRODUK ================= */}
         <motion.section
           id="produk"
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           style={{
             padding: "110px 60px",
           }}
@@ -921,10 +919,8 @@ img{
         {/* ================= TENTANG ================= */}
         <motion.section
           id="tentang"
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           style={{
             padding: "110px 60px",
           }}
@@ -999,10 +995,8 @@ img{
         {/* ================= KONTAK ================= */}
         <motion.section
           id="kontak"
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           style={{
             padding: "120px 60px 60px",
 
