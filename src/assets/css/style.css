@@ -555,7 +555,8 @@ footer {
 
   /* HERO */
   .hero-slider{
-    height:100svh;
+    height:100vh;
+    height:auto;
   }
 
   .slide-content{
@@ -591,6 +592,8 @@ footer {
 
   /* PRODUCT GRID */
   .products-grid{
+    width:100%;
+    overflow:visible;
     grid-template-columns:1fr;
     gap:20px;
   }
@@ -725,7 +728,7 @@ a{
    SECTION SAFE OVERFLOW
 ========================================= */
 section {
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* =========================================
