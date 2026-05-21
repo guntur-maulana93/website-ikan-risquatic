@@ -176,7 +176,7 @@ export default function Home() {
     {
       id: 12,
       name: "Filter Aquarium",
-      price: "Rp 78.000",
+      price: "Rp 80.000",
       image: filterImg,
       category: "Alat",
       desc: "Filter yang cocok untuk aquarium 50cm ke bawah.",
@@ -302,17 +302,6 @@ export default function Home() {
   if (loading) {
     return <FishLoader />;
   }
-
-  // ================= BUTTON =================
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) =>
-      prev === 0 ? slides.length - 1 : prev - 1
-    );
-  };
 
   // ================= NAVBAR CSS =================
   const navbarStyle = `
@@ -713,6 +702,7 @@ img{
                     fontSize: "78px",
                     fontWeight: "800",
                     marginBottom: "22px",
+                    marginTop: "-250px",
                     fontFamily: "'Montserrat', sans-serif",
                     textShadow: "0 8px 30px rgba(0,0,0,0.4)",
                   }}
@@ -722,6 +712,9 @@ img{
 
                 <p
                   style={{
+                    position: "relative",
+                    top: "400px",
+
                     fontSize: "22px",
                     color: "#dbeafe",
                     maxWidth: "760px",
@@ -735,16 +728,6 @@ img{
               </div>
             </div>
           ))}
-
-          {/* PREV */}
-          <button onClick={prevSlide} style={buttonPrev}>
-            ❮
-          </button>
-
-          {/* NEXT */}
-          <button onClick={nextSlide} style={buttonNext}>
-            ❯
-          </button>
         </section>
 
         {/* ================= PRODUK ================= */}
@@ -1260,40 +1243,6 @@ const socialButton = {
   textDecoration: "none",
   fontWeight: "600",
   boxShadow: "0 10px 25px rgba(56,189,248,0.25)",
-};
-
-const buttonPrev = {
-  position: "absolute",
-  left: "25px",
-  top: "50%",
-  transform: "translateY(-50%)",
-  zIndex: 10,
-  background: "rgba(255,255,255,0.12)",
-  backdropFilter: "blur(10px)",
-  border: "1px solid rgba(255,255,255,0.15)",
-  color: "white",
-  width: "60px",
-  height: "60px",
-  borderRadius: "50%",
-  fontSize: "30px",
-  cursor: "pointer",
-};
-
-const buttonNext = {
-  position: "absolute",
-  right: "25px",
-  top: "50%",
-  transform: "translateY(-50%)",
-  zIndex: 10,
-  background: "rgba(255,255,255,0.12)",
-  backdropFilter: "blur(10px)",
-  border: "1px solid rgba(255,255,255,0.15)",
-  color: "white",
-  width: "60px",
-  height: "60px",
-  borderRadius: "50%",
-  fontSize: "30px",
-  cursor: "pointer",
 };
 
 const contactCard = {
