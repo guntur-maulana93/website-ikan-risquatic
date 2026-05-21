@@ -304,3 +304,82 @@
     opacity:.5;
   }
 }
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+  .fish{
+    width:70px;
+    height:48px;
+  }
+
+  @keyframes fishSwim{
+    0%{
+      left:0%;
+      transform:translateY(-50%);
+    }
+
+    100%{
+      left:calc(100% - 80px);
+      transform:translateY(-50%);
+    }
+  }
+
+  .fish-tail{
+    width:24px;
+    height:30px;
+
+    left:-18px;
+    top:10px;
+  }
+
+  .fish-eye{
+    width:7px;
+    height:7px;
+
+    right:16px;
+    top:18px;
+  }
+
+  .fish-mouth{
+    width:9px;
+    height:5px;
+
+    right:-3px;
+    top:22px;
+  }
+
+  .fish-fin-top{
+    width:16px;
+    height:12px;
+
+    left:34px;
+    top:-6px;
+  }
+
+  .fish-fin-bottom{
+    width:14px;
+    height:12px;
+
+    left:34px;
+    bottom:-6px;
+  }
+
+  .fish-fin-side{
+    width:18px;
+    height:12px;
+
+    left:30px;
+    top:18px;
+  }
+
+  .loading-text{
+    font-size:16px;
+  }
+
+  .loading-bar{
+    width:220px;
+  }
+
+}
